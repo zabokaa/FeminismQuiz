@@ -37,8 +37,10 @@ h2 {
 button {
     font-family: 'Yatra One', system-ui;
     background-color: var(--third-color);
-    color: #FFFFFF;
-    border: 2px solid var(--third-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    padding: 7px;
+    margin-top: 12px;
 }
 
 /* QUIZ Section */
