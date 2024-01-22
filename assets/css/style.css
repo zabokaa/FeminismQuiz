@@ -52,6 +52,24 @@ button {
     margin: 100px auto 0;
     padding: 30px;
     border-radius: 12px;
+  
+}
+
+.quiz-container h2 {
+    color: #000000;
+}
+
+#answer-container button {
+    background: var(--secondary-color);
+    color: #000000;
+    border: 1px solid var(--third-color);
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.answer-button {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
 }
 /* FOOTER */
 footer {
