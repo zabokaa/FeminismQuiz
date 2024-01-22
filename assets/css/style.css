@@ -1,5 +1,5 @@
 /* google font */
-  @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;700&family=Yatra+One&display=swap');
 
   :root {
     --primary-color: #b65db2;
@@ -11,6 +11,7 @@
 
 body {
     background-color: blueviolet;
+    font-family: 'Palanquin Dark', sans-serif;
 }
 
 h1 {
