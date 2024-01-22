@@ -19,9 +19,15 @@ body {
     background-color: var(--primary-color);
     font-family: 'Palanquin Dark', sans-serif;
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
 }
 
 /* MAIN section */
+main {
+    flex: 1 0 auto;
+    margin-bottom: 55px;
+}
 h1,
 h2 {
     font-family: 'Yatra One', system-ui;
