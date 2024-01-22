@@ -92,3 +92,46 @@ let questions = [
     }
 ];
 
+// FUNCTIONS
+
+// defining variables here:
+
+/**
+ * starting the quiz
+ */
+function start() {
+
+}
+
+/**
+ * using questions data couples and assigning a number
+ */
+function newQuestion () {
+
+}
+
+/**
+ * 5 questions for each round will be selected randomly
+ */
+function randomQuestions () {
+
+}
+
+/**
+ * user will select the answer
+ */
+function selectAnswer () {
+
+}
+
+/**
+ * starting next question if <=5
+ */
+function nextQuestion () {
+
+}
+
+nextButton.addEventListener("click", nextQuestion);
+
+start(); 
+
