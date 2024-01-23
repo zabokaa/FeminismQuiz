@@ -92,6 +92,11 @@ let questions = [
     }
 ];
 
+// EVENT LISTENERS AND HANDLERS
+const startButton = document.getElementById('start-quiz-btn');
+
+startButton.addEventListener("click", runQuiz);
+
 // FUNCTIONS
 
 // defining variables here:
@@ -99,8 +104,8 @@ let questions = [
 /**
  * starting the quiz
  */
-function start() {
-
+function runQuiz() {
+    console.log("quiz is starting");
 }
 
 /**
@@ -118,14 +123,21 @@ function randomQuestions () {
 }
 
 /**
- * user will select the answer
+ * comparing the selected answer of the user with the stored answer
  */
-function selectAnswer () {
+function checkAnswer () {
 
 }
 
 /**
- * starting next question if <=5
+ * counting the correct answers of user and displaying it on last 
+ */
+function scoreCorrect () {
+
+}
+
+/**
+ * starting next question if <=5 and displaying final score after at round 6
  */
 function nextQuestion () {
 
