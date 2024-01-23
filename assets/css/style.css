@@ -39,6 +39,7 @@ button {
     background-color: var(--third-color);
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
+    border-radius: 8px;
     padding: 7px;
     margin-top: 12px;
 }
