@@ -92,10 +92,25 @@ let questions = [
     }
 ];
 
-// EVENT LISTENERS AND HANDLERS
-const startButton = document.getElementById('start-quiz-btn');
 
-startButton.addEventListener("click", runQuiz);
+
+// EVENT LISTENERS AND HANDLERS
+document.addEventListener("DOMContentLoaded", function() {
+    const startButton = document.getElementById('start-quiz-btn');
+    console.log(startButton);
+    startButton.addEventListener("click", runQuiz);
+// startButton.addEventListener("click", runQuiz);
+
+
+function runQuiz() {
+    console.log("quiz is starting");    
+}
+
+/**
+ * using questions data couples and assigning a number
+ */
+
+});
 
 // FUNCTIONS
 
@@ -104,46 +119,37 @@ startButton.addEventListener("click", runQuiz);
 /**
  * starting the quiz
  */
-function runQuiz() {
-    console.log("quiz is starting");
-}
 
-/**
- * using questions data couples and assigning a number
- */
-function newQuestion () {
 
-}
+// /**
+//  * 5 questions for each round will be selected randomly
+//  */
+// function randomQuestions () {
 
-/**
- * 5 questions for each round will be selected randomly
- */
-function randomQuestions () {
+// }
 
-}
+// /**
+//  * comparing the selected answer of the user with the stored answer
+//  */
+// function checkAnswer () {
 
-/**
- * comparing the selected answer of the user with the stored answer
- */
-function checkAnswer () {
+// }
 
-}
+// /**
+//  * counting the correct answers of user and displaying it on last 
+//  */
+// function scoreCorrect () {
 
-/**
- * counting the correct answers of user and displaying it on last 
- */
-function scoreCorrect () {
+// }
 
-}
+// /**
+//  * starting next question if <=5 and displaying final score after at round 6
+//  */
+// function nextQuestion () {
 
-/**
- * starting next question if <=5 and displaying final score after at round 6
- */
-function nextQuestion () {
+// }
 
-}
+// nextButton.addEventListener("click", nextQuestion);
 
-nextButton.addEventListener("click", nextQuestion);
-
-start(); 
+// start(); 
 
