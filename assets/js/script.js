@@ -126,7 +126,7 @@ let questionsRoundIndex = 0;
     function displayQuestion() {
         currentQuestion = randomQuestions[questionsRoundIndex]
         questionsRoundIndex++;
-        questionContainer.innerHTML = questionsRoundIndex + "." + currentQuestion.question;
+        questionContainer.innerHTML = "(" + questionsRoundIndex + ") " + currentQuestion.question;
 
         answerContainer.innerHTML = '';
 
@@ -148,7 +148,8 @@ let questionsRoundIndex = 0;
         const correct = clickedBtn.dataset.correct === "true";
         if (correct) {
             clickedBtn.classList.add("correct");
-        } else {
+            scoreCorrect();     
+            } else {
             clickedBtn.classList.add("incorrect");
         }
         
@@ -182,12 +183,12 @@ function nextQuestion() {
     console.log(randomQuestions);
 
 
-// /**
-//  * counting the correct answers of user and displaying it on last 
-//  */
-// function scoreCorrect () {
+/**
+ * counting the correct answers of user and displaying it on last 
+ */
+function scoreCorrect() {
 
-// }
+}
 
 });
 
