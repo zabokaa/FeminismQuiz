@@ -130,7 +130,7 @@ let antwort;
         questionContainer.innerHTML = "(" + questionsRoundIndex + ") " + currentQuestion.question;
 
         answerContainer.innerHTML = '';
-
+        nextBtn.style.display = "none";
         currentQuestion.answers.forEach(answer => {
            antwort = document.createElement("button")
            antwort.innerHTML = answer.text;
@@ -154,7 +154,7 @@ let antwort;
             clickedBtn.classList.add("incorrect");
         }
         Array.from(antwort.children).forEach(antwort => {
-            if (answer.dataset.correct === "true") {
+            if (antwort.dataset.correct === "true") {
                 antwort.classList.add("correct");
             }
             antwort.disabled = true;  //will disable to click on another answer
