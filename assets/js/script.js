@@ -96,37 +96,61 @@ let questions = [
 
 // EVENT LISTENERS AND HANDLERS
 document.addEventListener("DOMContentLoaded", function() {
+
+    // // that was just for testing, just working without anchor tag in the index.html
     const startButton = document.getElementById('start-quiz-btn');
-    console.log(startButton);
-    startButton.addEventListener("click", runQuiz);
-// startButton.addEventListener("click", runQuiz);
+    // for testing only:
+    // console.log(startButton);
+    startButton.addEventListener("click", openQuiz);
+
+ /**
+ * opening the quiz.html page
+ */   
+    function openQuiz() {
+    console.log("quiz is starting"); 
+    window.location.href = "quiz.html?start=true";
+    }       
+
+// defining variables here:
+    const questionContainer = document.getElementById("question-container");
+    const answerContainer = document.getElementById("answer-container");
+    const homeBtn = document.getElementById("back-home-btn");
+    const nextBtn = document.getElementById("next-question-btn");
+
+    let questionsRound = [];
+    let questionsRoundIndex = 0;
 
 
-function runQuiz() {
-    console.log("quiz is starting");    
-}
 
 /**
  * using questions data couples and assigning a number
  */
 
-});
+
 
 // FUNCTIONS
 
-// defining variables here:
+
 
 /**
  * starting the quiz
  */
 
 
-// /**
-//  * 5 questions for each round will be selected randomly
-//  */
-// function randomQuestions () {
-
-// }
+/**
+ * 6 questions for each round will be selected randomly using the Fisher–Yates shuffle algorithm
+ */
+function randomize(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+// calling the func
+randomize(questions);
+const randomQuestions = questions.slice(0, 6);
+console.log(randomQuestions);
 
 // /**
 //  * comparing the selected answer of the user with the stored answer
@@ -148,6 +172,8 @@ function runQuiz() {
 // function nextQuestion () {
 
 // }
+
+});
 
 // nextButton.addEventListener("click", nextQuestion);
 
