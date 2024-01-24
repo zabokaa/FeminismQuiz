@@ -105,14 +105,16 @@ document.addEventListener("DOMContentLoaded", function() {
 const answerContainer = document.getElementById("answer-container");
 const homeBtn = document.getElementById("back-home-btn");
 const nextBtn = document.getElementById("next-question-btn");
-const answerButtons = document.querySelectorAll('.answer-button');
+// const answerButtons = document.querySelectorAll('.answer-button');
 const startButton = document.getElementById('start-quiz-btn');
 let randomQuestions = []; 
+let currentQuestion;
 let questionsRoundIndex = 0;
 // EVENT LISTENERS AND HANDLER
     // for testing only:
     // console.log(startButton);
     startButton.addEventListener("click", openQuiz);
+    nextBtn.addEventListener("click", nextQuestion);
 // FUNCTIONS
 
  /**
@@ -123,42 +125,52 @@ let questionsRoundIndex = 0;
     console.log("quiz is starting"); 
     displayQuestion();
     }       
-
+ 
 /**
  * displaying the dataset
  */   
-    // function setNextQuestion() {
-    //     displayQuestion(randomQuestions[questionsRoundIndex]);
-
-    //     }
- 
-/**
- * using questions data couples and assigning a number
- */   
     function displayQuestion() {
-        let currenQuestion = randomQuestions[questionsRoundIndex]
+        currentQuestion = randomQuestions[questionsRoundIndex]
         questionsRoundIndex++;
-        questionContainer.innerHTML = questionsRoundIndex + "." + currenQuestion.question;
+        questionContainer.innerHTML = questionsRoundIndex + "." + currentQuestion.question;
 
         answerContainer.innerHTML = '';
 
-        currenQuestion.answers.forEach(answer => {
+        currentQuestion.answers.forEach(answer => {
            let antwort = document.createElement("button")
-
            antwort.innerHTML = answer.text;
            antwort.classList.add("answer-button");
            answerContainer.appendChild(antwort); 
-         
+// idea taken from Web Dev Simplified (see aknowledgement in ReadMe)
+           if (answer.correct) {
+            antwort.dataset.correct = answer.correct
+           }
+           antwort.addEventListener("click", userAnswer)
     });
 }
 
+    function userAnswer(a) {
+        const clickedBtn = a.target;
+        const correct = clickedBtn.dataset.correct === "true";
+        if (correct) {
+            clickedBtn.classList.add("correct");
+        } else {
+            clickedBtn.classList.add("incorrect");
+        }
+        
+    }
+
     
-
-
-
-// FUNCTIONS
-
-
+/**
+ * starting next question if <=5 and displaying final score after at round 6
+ */
+function nextQuestion() {
+    if (questionsRoundIndex <= currentQuestion.length) {
+        console.log("how is it working");
+    } else {
+        openQuiz();
+    }
+}
 
 /**
  * 6 questions for each round will be selected randomly using the Fisher–Yates shuffle algorithm
@@ -196,9 +208,10 @@ let questionsRoundIndex = 0;
 
 // }
 
+
 });
 
 // nextButton.addEventListener("click", nextQuestion);
 
-// start(); 
+
 

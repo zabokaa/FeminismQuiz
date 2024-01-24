@@ -5,6 +5,8 @@
     --primary-color: #653592;
     --secondary-color:#D7E8F3;
     --third-color: #3881A5;
+    --correct: #77DD77;
+    --incorrect: #FF6961;
 }
 
 * {
@@ -65,13 +67,11 @@ button {
     color: #000000;
     border: 1px solid var(--third-color);
     font-family: 'Palanquin Dark', sans-serif;
-}
-
-.answer-button {
     width: 100%;
     text-align: left;
     cursor: pointer;
 }
+
 /* FOOTER */
 footer {
     background-color: var(--third-color);
