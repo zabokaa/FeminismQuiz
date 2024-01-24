@@ -106,6 +106,7 @@ const startButton = document.getElementById('start-quiz-btn');
 let randomQuestions = []; 
 let currentQuestion;
 let questionsRoundIndex = 0;
+let antwort;
 // EVENT LISTENERS AND HANDLER
     startButton.addEventListener("click", openQuiz);
     nextBtn.addEventListener("click", nextQuestion);
@@ -131,7 +132,7 @@ let questionsRoundIndex = 0;
         answerContainer.innerHTML = '';
 
         currentQuestion.answers.forEach(answer => {
-           let antwort = document.createElement("button")
+           antwort = document.createElement("button")
            antwort.innerHTML = answer.text;
            antwort.classList.add("answer-button");
            answerContainer.appendChild(antwort); 
@@ -156,9 +157,9 @@ let questionsRoundIndex = 0;
             if (answer.dataset.correct === "true") {
                 antwort.classList.add("correct");
             }
-            antwort.disabled = true;
+            antwort.disabled = true;  //will disable to click on another answer
         })
-        nextBtn.style.display = "block";
+        nextBtn.style.display = "block"; // will display the next btn
     }
 
     
