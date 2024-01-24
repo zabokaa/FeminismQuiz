@@ -107,6 +107,8 @@ let randomQuestions = [];
 let currentQuestion;
 let questionsRoundIndex = 0;
 let antwort;
+let score = 0;
+
 // EVENT LISTENERS AND HANDLER
     startButton.addEventListener("click", openQuiz);
     nextBtn.addEventListener("click", nextQuestion);
@@ -117,6 +119,7 @@ let antwort;
  */   
     function openQuiz() {
     questionsRoundIndex = 0;
+    score = 0;
     console.log("quiz is starting"); 
     displayQuestion();
     }       
@@ -149,7 +152,7 @@ let antwort;
         const correct = clickedBtn.dataset.correct === "true";
         if (correct) {
             clickedBtn.classList.add("correct");
-            scoreCorrect();     
+            score++;     
             } else {
             clickedBtn.classList.add("incorrect");
        
@@ -169,9 +172,13 @@ let antwort;
  */
 function nextQuestion() {
     if (questionsRoundIndex < randomQuestions.length) {
+        Array.from(answerContainer.children).forEach(antwort => {
+            antwort.classList.remove("correct", "incorrect");
+            antwort.disabled = false;
+          });
         displayQuestion();
     } else {
-        console.log("quiz over");  //for now. later the score will be displayed
+        scoreCorrect();  
     }
 }
 
@@ -195,7 +202,7 @@ function nextQuestion() {
  * counting the correct answers of user and displaying it on last 
  */
 function scoreCorrect() {
-
+    console.log(`You had ${score} out of ${randomQuestions.length} questions correct.`);
 }
 
 });
