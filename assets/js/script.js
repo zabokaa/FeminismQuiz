@@ -202,7 +202,8 @@ function nextQuestion() {
  * counting the correct answers of user and displaying it on last 
  */
 function scoreCorrect() {
-    console.log(`You had ${score} out of ${randomQuestions.length} questions correct.`);
+    const scoreScreen = document.getElementById("score-screen")
+    scoreScreen.textContent = (`You had ${score} out of ${randomQuestions.length} questions correct.`);
 }
 
 });
