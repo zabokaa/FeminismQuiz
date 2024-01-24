@@ -62,7 +62,7 @@ button {
     color: #000000;
 }
 
-#answer-container button {
+.answer-button {
     background: var(--secondary-color);
     color: #000000;
     border: 1px solid var(--third-color);
@@ -72,6 +72,17 @@ button {
     cursor: pointer;
 }
 
+.answer-button:hover {
+    background: var(--primary-color);
+}
+
+.correct {
+    background: var(--correct);
+}
+
+.incorrect {
+    background: var(--incorrect);
+}
 /* FOOTER */
 footer {
     background-color: var(--third-color);
