@@ -70,10 +70,11 @@ button {
     width: 100%;
     text-align: left;
     cursor: pointer;
+    transition-duration: 2s;
 }
 
 .answer-button:hover {
-    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .correct {
