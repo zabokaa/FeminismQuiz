@@ -84,6 +84,10 @@ button {
 .incorrect {
     background: var(--incorrect);
 }
+
+#next-question-btn {
+    display: none;
+}
 /* FOOTER */
 footer {
     background-color: var(--third-color);

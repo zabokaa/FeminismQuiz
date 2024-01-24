@@ -152,7 +152,13 @@ let questionsRoundIndex = 0;
             } else {
             clickedBtn.classList.add("incorrect");
         }
-        
+        Array.from(antwort.children).forEach(antwort => {
+            if (answer.dataset.correct === "true") {
+                antwort.classList.add("correct");
+            }
+            antwort.disabled = true;
+        })
+        nextBtn.style.display = "block";
     }
 
     
