@@ -93,14 +93,7 @@ let questions = [
 ];
 
 // defining global variables:
-const questionContainer = document.getElementById("questions");
-const answerContainer = document.getElementById("answer-container");
-const homeBtn = document.getElementById("back-home-btn");
-const nextBtn = document.getElementById("next-question-btn");
-const answerButtons = document.querySelectorAll('.answer-button');
-const startButton = document.getElementById('start-quiz-btn');
-let randomQuestions = []; 
-let questionsRoundIndex = 0;
+
 
 
 
@@ -108,6 +101,14 @@ let questionsRoundIndex = 0;
  * waiting for DOM to be loaded
  */   
 document.addEventListener("DOMContentLoaded", function() {
+    const questionContainer = document.getElementById("questions");
+const answerContainer = document.getElementById("answer-container");
+const homeBtn = document.getElementById("back-home-btn");
+const nextBtn = document.getElementById("next-question-btn");
+const answerButtons = document.querySelectorAll('.answer-button');
+const startButton = document.getElementById('start-quiz-btn');
+let randomQuestions = []; 
+let questionsRoundIndex = 0;
 // EVENT LISTENERS AND HANDLER
     // for testing only:
     // console.log(startButton);
@@ -118,21 +119,40 @@ document.addEventListener("DOMContentLoaded", function() {
  * opening the quiz.html page and loading the first round
  */   
     function openQuiz() {
+    questionsRoundIndex = 0;
     console.log("quiz is starting"); 
-    setNextQuestion();
+    displayQuestion();
     }       
 
 /**
- * using questions data couples and assigning a number
- */
-    function displayQuestion(questions) {
-        let questionNumber = questionsRoundIndex + 1;
-        questionContainer.innerText = questionNumber + "." + questions.question;
-    }
+ * displaying the dataset
+ */   
+    // function setNextQuestion() {
+    //     displayQuestion(randomQuestions[questionsRoundIndex]);
 
-    function setNextQuestion() {
-        displayQuestion(randomQuestions[questionsRoundIndex]);
-    }
+    //     }
+ 
+/**
+ * using questions data couples and assigning a number
+ */   
+    function displayQuestion() {
+        let currenQuestion = randomQuestions[questionsRoundIndex]
+        questionsRoundIndex++;
+        questionContainer.innerHTML = questionsRoundIndex + "." + currenQuestion.question;
+
+        answerContainer.innerHTML = '';
+
+        currenQuestion.answers.forEach(answer => {
+           let antwort = document.createElement("button")
+
+           antwort.innerHTML = answer.text;
+           antwort.classList.add("answer-button");
+           answerContainer.appendChild(antwort); 
+         
+    });
+}
+
+    
 
 
 
