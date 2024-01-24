@@ -152,13 +152,14 @@ let antwort;
             scoreCorrect();     
             } else {
             clickedBtn.classList.add("incorrect");
-        }
-        Array.from(antwort.children).forEach(antwort => {
-            if (antwort.dataset.correct === "true") {
-                antwort.classList.add("correct");
-            }
+       
+            Array.from(answerContainer.children).forEach(antwort => {
+             if (antwort.dataset.correct === "true") {
+                    antwort.classList.add("correct");
+                }
             antwort.disabled = true;  //will disable to click on another answer
-        })
+        });
+        }
         nextBtn.style.display = "block"; // will display the next btn
     }
 

@@ -77,11 +77,11 @@ button {
     border-color: var(--primary-color);
 }
 
-.correct {
+.answer-button.correct {
     background: var(--correct);
 }
 
-.incorrect {
+.answer-button.incorrect {
     background: var(--incorrect);
 }
 
