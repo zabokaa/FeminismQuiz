@@ -93,7 +93,7 @@ let questions = [
 ];
 
 // defining global variables:
-const questionContainer = document.getElementById("question");
+const questionContainer = document.getElementById("questions");
 const answerContainer = document.getElementById("answer-container");
 const homeBtn = document.getElementById("back-home-btn");
 const nextBtn = document.getElementById("next-question-btn");
@@ -122,14 +122,12 @@ document.addEventListener("DOMContentLoaded", function() {
     setNextQuestion();
     }       
 
-
-
-
 /**
  * using questions data couples and assigning a number
  */
-    function displayQuestion(question) {
-        questionContainer.innerText = question.question;
+    function displayQuestion(questions) {
+        let questionNumber = questionsRoundIndex + 1;
+        questionContainer.innerText = questionNumber + "." + questions.question;
     }
 
     function setNextQuestion() {
