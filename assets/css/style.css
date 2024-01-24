@@ -73,10 +73,13 @@ button {
     transition-duration: 2s;
 }
 
-.answer-button:hover {
+.answer-button:hover:not([disabled]) {
     border-color: var(--primary-color);
 }
 
+.answer-button:disabled {
+    cursor: no-drop;
+}
 .answer-button.correct {
     background: var(--correct);
 }
