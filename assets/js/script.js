@@ -1,4 +1,4 @@
-// data set of questions+answers
+// DATASET of questions+answers
 let questions = [
     // question1
     {
@@ -15,7 +15,7 @@ let questions = [
         answers: [
             { text: "had a child", correct: false},
             { text: "were communists", correct: false },
-            { text: "no women at all", correct: true },
+            { text: "got married", correct: true },
         ]
     },
     // question3
@@ -92,11 +92,7 @@ let questions = [
     }
 ];
 
-// defining global variables:
-
-
-
-
+// FUNCTIONS 
  /**
  * waiting for DOM to be loaded
  */   
@@ -111,8 +107,6 @@ let randomQuestions = [];
 let currentQuestion;
 let questionsRoundIndex = 0;
 // EVENT LISTENERS AND HANDLER
-    // for testing only:
-    // console.log(startButton);
     startButton.addEventListener("click", openQuiz);
     nextBtn.addEventListener("click", nextQuestion);
 // FUNCTIONS
@@ -165,10 +159,10 @@ let questionsRoundIndex = 0;
  * starting next question if <=5 and displaying final score after at round 6
  */
 function nextQuestion() {
-    if (questionsRoundIndex <= currentQuestion.length) {
-        console.log("how is it working");
+    if (questionsRoundIndex < randomQuestions.length) {
+        displayQuestion();
     } else {
-        openQuiz();
+        console.log("quiz over");  //for now. later the score will be displayed
     }
 }
 
@@ -187,12 +181,6 @@ function nextQuestion() {
     randomQuestions = questions.slice(0, 6);  
     console.log(randomQuestions);
 
-// /**
-//  * comparing the selected answer of the user with the stored answer
-//  */
-// function checkAnswer () {
-
-// }
 
 // /**
 //  * counting the correct answers of user and displaying it on last 
@@ -201,17 +189,8 @@ function nextQuestion() {
 
 // }
 
-// /**
-//  * starting next question if <=5 and displaying final score after at round 6
-//  */
-// function nextQuestion () {
-
-// }
-
-
 });
 
-// nextButton.addEventListener("click", nextQuestion);
 
 
 
