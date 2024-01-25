@@ -189,5 +189,15 @@ footer p {
 
 /* media-query for laptops  */
 @media screen and (min-width: 992px) {
-    
+    h1 {
+        font-size: 90px;
+    }
+    .intro-box {
+        margin-right: 240px;
+        margin-left: 240px;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
