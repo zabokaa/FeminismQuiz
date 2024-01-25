@@ -8,7 +8,7 @@ let questions = [
             { text: "1894 in Great Britain", correct: false },
             { text: "1968 in Germany", correct: false },
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "france"
     },
     // question2
     {
@@ -18,7 +18,7 @@ let questions = [
             { text: "were communists", correct: false },
             { text: "got married", correct: true },
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "married"
     },
     // question3
     {
@@ -28,7 +28,7 @@ let questions = [
             { text: "90 per cent of female voters", correct: true },
             { text: "women were not allowed to vote", correct: false },
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "Lorem."
     },
     // question4
     {
@@ -38,7 +38,7 @@ let questions = [
             { text: "The first women's organisation in Germany was founded", correct: true },
             { text: "Demonstrating women threw bread and vegetables ", correct: false },
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "yes."
     },
     // question5
     {
@@ -48,7 +48,7 @@ let questions = [
             { text: "taking the contraceptive pill", correct: false },
             { text: "have had an abortion", correct: true},
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "abortion"
     },
     // question6
     {
@@ -58,7 +58,7 @@ let questions = [
             { text: "Since the foundation of the German Empire under Bismarck in 1871", correct: false },
             { text: "Since the beginning of the Weimar Republic in 1918", correct: true },
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "1918."
     },
     // question7
     {
@@ -68,7 +68,7 @@ let questions = [
             { text: "Force his wife to bear at least two children", correct: false },
             { text: "Forbid his wife to go to the polls", correct: false },
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "work contractão."
     },
     // question8
     {
@@ -78,7 +78,7 @@ let questions = [
             { text: "Liechtenstein", correct: true },
             { text: "Saudi Arabia", correct: false },
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "Liechtião."
     },
     // question9
     {
@@ -88,7 +88,7 @@ let questions = [
             { text: "Cancer", correct: false },
             { text: "Road traffic accidents", correct: false },
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "feminic"
     },
      // question10
      {
@@ -98,7 +98,7 @@ let questions = [
             { text: "1997", correct: true },
             { text: "1952", correct: false },     
         ],
-        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
+        explanation: "1979ão."
     }
 ];
 
@@ -230,6 +230,9 @@ function nextQuestion() {
         displayQuestion();
     } else {
         scoreCorrect();     
+    }
+    if (modal.style.display === "block") {
+        modal.style.display = "none";
     }
 }
 
