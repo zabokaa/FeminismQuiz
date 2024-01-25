@@ -98,16 +98,15 @@ let questions = [
  */   
 document.addEventListener("DOMContentLoaded", function() {
     const questionContainer = document.getElementById("questions");
-const answerContainer = document.getElementById("answer-container");
-const homeBtn = document.getElementById("back-home-btn");
-const nextBtn = document.getElementById("next-question-btn");
-// const answerButtons = document.querySelectorAll('.answer-button');
-const startButton = document.getElementById('start-quiz-btn');
-let randomQuestions = []; 
-let currentQuestion;
-let questionsRoundIndex = 0;
-let antwort;
-let score = 0;
+    const answerContainer = document.getElementById("answer-container");
+    const homeBtn = document.getElementById("home-btn");
+    const nextBtn = document.getElementById("next-question-btn");
+    const startButton = document.getElementById('start-quiz-btn');
+    let randomQuestions = []; 
+    let currentQuestion;
+    let questionsRoundIndex = 0;
+    let antwort;
+    let score = 0;
 
 // EVENT LISTENERS AND HANDLER
     startButton.addEventListener("click", openQuiz);
@@ -128,6 +127,7 @@ let score = 0;
  * displaying the dataset
  */   
     function displayQuestion() {
+
         currentQuestion = randomQuestions[questionsRoundIndex]
         questionsRoundIndex++;
         questionContainer.innerHTML = "(" + questionsRoundIndex + ") " + currentQuestion.question;
@@ -177,12 +177,8 @@ function nextQuestion() {
             antwort.disabled = false;
           });
         displayQuestion();
-        homeBtnAfterQuiz.style.display = "none";
-        nextBtn.style.display = "block";
     } else {
-        scoreCorrect(); 
-        homeBtnAfterQuiz.style.display = "block";
-        nextBtn.style.display = "none"; 
+        scoreCorrect();     
     }
 }
 
@@ -198,7 +194,7 @@ function nextQuestion() {
     }
     // calling the func
     randomize(questions);
-    randomQuestions = questions.slice(0, 6);  
+    randomQuestions = questions.slice(0, 2);  
     console.log(randomQuestions);
 
 
@@ -206,10 +202,8 @@ function nextQuestion() {
  * counting the correct answers of user and displaying it on last 
  */
 function scoreCorrect() {
-    const scoreScreen = document.getElementById("score-screen")
-    scoreScreen.textContent = (`You had ${score} out of ${randomQuestions.length} questions correct.`);
+    nextBtn.innerHTML = (`You had ${score} out of ${randomQuestions.length} questions correct.`);
 }
-
 });
 
 

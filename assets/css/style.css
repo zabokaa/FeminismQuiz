@@ -78,8 +78,10 @@ button {
 }
 
 .answer-button:disabled {
-    cursor: no-drop;
+    /* /WHY IS IT NOT WORKING ?? */
+    cursor: no-drop;    
 }
+
 .answer-button.correct {
     background: var(--correct);
 }
