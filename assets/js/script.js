@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         }
         nextBtn.style.display = "block"; // will display the next btn
+        nextBtn.innerText = "NEXT"; //set back, bc got changed in scoreCorrect
     }
 
     

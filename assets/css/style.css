@@ -68,7 +68,7 @@ button {
 .answer-button {
     background: var(--secondary-color);
     color: #000000;
-    border: 1px solid var(--third-color);
+    border: 5px solid var(--third-color);
     font-family: 'Palanquin Dark', sans-serif;
     width: 100%;
     text-align: left;
