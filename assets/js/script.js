@@ -247,7 +247,7 @@ function scoreCorrect() {
     answerContainer.innerHTML = '';
     startButton.classList.remove("hidden");
     startButton.innerHTML = "Start a new round";
-    nextButton.innerHTML = (`💜 Keep up fighting, ${username} 💪 💜`);
+    nextButton.innerHTML = (`💜 Keep up fighting ${username} 💪 💜`);
 }
 });
 
