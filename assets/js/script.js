@@ -1,4 +1,4 @@
-// DATASET of questions+answers
+// DATASET of questions + answers + modalText(explanation)
 let questions = [
     // question1
     {
@@ -114,30 +114,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextButton = document.getElementById("next-question-btn");
     const startButton = document.getElementById("start-quiz-btn");
 //////////
-
+// modal code from W3School
     const modalButton = document.getElementById("modal-btn");
     const modal = document.getElementById("myModal");
     const modalText = document.getElementById("modal-text")
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    modalButton.onclick = function() {
-    modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-    modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    }
-
+    let span = document.getElementsByClassName("close")[0];
+ 
 ///////////////////////////
     let randomQuestions = []; 
     let currentQuestion;
@@ -152,8 +134,16 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("username-input").addEventListener("submit", function (e) {
         e.preventDefault();
         username = document.getElementById("username").value;
-    }     
-    )
+    });
+    // modal code taken from W3School
+    modalButton.onclick = function() {
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+
 // FUNCTIONS
 
  /**
@@ -192,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function() {
            }
            antwort.addEventListener("click", userAnswer)
     });
-    // here modal-text
+    //  modal-text
         modalText.innerHTML = currentQuestion.explanation;
 }
 
@@ -246,7 +236,6 @@ function nextQuestion() {
         }
         return array;
     }
-    // calling the func
     randomize(questions);
     randomQuestions = questions.slice(0, 2);  
     console.log(randomQuestions);
@@ -260,7 +249,8 @@ function scoreCorrect() {
     answerContainer.innerHTML = '';
     startButton.classList.remove("hidden");
     startButton.innerHTML = "Start a new round";
-    nextButton.innerHTML = (`💜 Keep up fighting, ${username} 💪 💜`);
+    modalButton.innerHTML = (`Hola ${username}!<br> If you want to learn more click "Start an new game" above.`)
+    nextButton.innerHTML = "💜 Keep up fighting 💪 💜";
 }
 });
 
