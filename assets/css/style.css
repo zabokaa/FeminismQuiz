@@ -68,15 +68,6 @@ button {
     display: none;
 }
 
-/* MODAL */
-.modal {
-    display: none;
-}
-
-#modal-btn {
-    margin: 12px auto 0;
-    text-align: center;
-}
 /* QUIZ Section */
 
 #quiz-container {
@@ -120,6 +111,29 @@ button {
     background: var(--incorrect);
 }
 
+
+/* modal */
+.modal {
+    display: none;
+
+}
+
+#modal-btn {
+    margin: 12px auto 0;
+    text-align: center;
+}
+
+.modal-content {
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.close {
+    font-weight: bold;
+}
+
+/* next button */
 #next-question-btn {
     display: none;
     margin: 12px auto 0;
