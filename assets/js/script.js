@@ -202,7 +202,8 @@ function nextQuestion() {
  * counting the correct answers of user and displaying it on last 
  */
 function scoreCorrect() {
-    nextBtn.innerHTML = (`You had ${score} out of ${randomQuestions.length} questions correct.`);
+    questionContainer.innerHTML = (`You had ${score} out of ${randomQuestions.length} questions correct.`);
+    answerContainer.innerHTML = '';
 }
 });
 
