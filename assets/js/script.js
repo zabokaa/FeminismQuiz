@@ -177,8 +177,12 @@ function nextQuestion() {
             antwort.disabled = false;
           });
         displayQuestion();
+        homeBtnAfterQuiz.style.display = "none";
+        nextBtn.style.display = "block";
     } else {
-        scoreCorrect();  
+        scoreCorrect(); 
+        homeBtnAfterQuiz.style.display = "block";
+        nextBtn.style.display = "none"; 
     }
 }
 
