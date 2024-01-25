@@ -46,9 +46,12 @@ button {
     margin-top: 12px;
 }
 
+.hidden {
+    display: none;
+}
 /* QUIZ Section */
 
-.quiz-container {
+#quiz-container {
     background: var(--secondary-color);
     width: 90%;
     max-width: 500px;
@@ -58,7 +61,7 @@ button {
   
 }
 
-.quiz-container h2 {
+#quiz-container h2 {
     color: #000000;
 }
 
@@ -92,6 +95,8 @@ button {
 
 #next-question-btn {
     display: none;
+    margin: 12px auto 0;
+    text-align: center;
 }
 /* FOOTER */
 footer {

@@ -97,9 +97,10 @@ let questions = [
  * waiting for DOM to be loaded
  */   
 document.addEventListener("DOMContentLoaded", function() {
+    const quizContainer = document.getElementById("quiz-container");
     const questionContainer = document.getElementById("questions");
     const answerContainer = document.getElementById("answer-container");
-    const homeBtn = document.getElementById("home-btn");
+    const introContainer = document.getElementById("intro");
     const nextBtn = document.getElementById("next-question-btn");
     const startButton = document.getElementById('start-quiz-btn');
     let randomQuestions = []; 
@@ -121,6 +122,9 @@ document.addEventListener("DOMContentLoaded", function() {
     score = 0;
     console.log("quiz is starting"); 
     displayQuestion();
+    startButton.classList.add("hidden");
+    introContainer.classList.add("hidden");
+    quizContainer.classList.remove("hidden");
     }       
  
 /**
@@ -204,6 +208,9 @@ function nextQuestion() {
 function scoreCorrect() {
     questionContainer.innerHTML = (`You had ${score} out of ${randomQuestions.length} questions correct.`);
     answerContainer.innerHTML = '';
+    startButton.classList.remove("hidden");
+    startButton.innerHTML = "Start a new round";
+    nextBtn.innerText = "💜 Keep up fighting 💪 💜";
 }
 });
 
