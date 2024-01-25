@@ -7,7 +7,8 @@ let questions = [
             { text: "1882 in France", correct: true },
             { text: "1894 in Great Britain", correct: false },
             { text: "1968 in Germany", correct: false },
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
     // question2
     {
@@ -16,7 +17,8 @@ let questions = [
             { text: "had a child", correct: false},
             { text: "were communists", correct: false },
             { text: "got married", correct: true },
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
     // question3
     {
@@ -25,7 +27,8 @@ let questions = [
             { text: "10 per cent of female voters", correct: false },
             { text: "90 per cent of female voters", correct: true },
             { text: "women were not allowed to vote", correct: false },
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
     // question4
     {
@@ -34,7 +37,8 @@ let questions = [
             { text: "Women's associations argued about the future constitution", correct: false },
             { text: "The first women's organisation in Germany was founded", correct: true },
             { text: "Demonstrating women threw bread and vegetables ", correct: false },
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
     // question5
     {
@@ -43,7 +47,8 @@ let questions = [
             { text: "living with a woman", correct: false },
             { text: "taking the contraceptive pill", correct: false },
             { text: "have had an abortion", correct: true},
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
     // question6
     {
@@ -52,7 +57,8 @@ let questions = [
             { text: "Since the Enlightenment in the 18th century", correct: false },
             { text: "Since the foundation of the German Empire under Bismarck in 1871", correct: false },
             { text: "Since the beginning of the Weimar Republic in 1918", correct: true },
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
     // question7
     {
@@ -61,7 +67,8 @@ let questions = [
             { text: "Terminate the wife's employment contract", correct: true },
             { text: "Force his wife to bear at least two children", correct: false },
             { text: "Forbid his wife to go to the polls", correct: false },
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
     // question8
     {
@@ -70,7 +77,8 @@ let questions = [
             { text: "Switzerland", correct: false },
             { text: "Liechtenstein", correct: true },
             { text: "Saudi Arabia", correct: false },
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
     // question9
     {
@@ -79,7 +87,8 @@ let questions = [
             { text: "Feminicide", correct: true },
             { text: "Cancer", correct: false },
             { text: "Road traffic accidents", correct: false },
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     },
      // question10
      {
@@ -88,7 +97,8 @@ let questions = [
             { text: "1968", correct: false },
             { text: "1997", correct: true },
             { text: "1952", correct: false },     
-        ]
+        ],
+        explanation: "Lorem Ipsum é que nem os comportamentos machistas dentro da criação."
     }
 ];
 
@@ -101,8 +111,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const questionContainer = document.getElementById("questions");
     const answerContainer = document.getElementById("answer-container");
     const introContainer = document.getElementById("intro");
-    const nextBtn = document.getElementById("next-question-btn");
-    const startButton = document.getElementById('start-quiz-btn');
+    const nextButton = document.getElementById("next-question-btn");
+    const startButton = document.getElementById("start-quiz-btn");
+    const modalButton = document.getElementById("modal-btn");
     let randomQuestions = []; 
     let currentQuestion;
     let questionsRoundIndex = 0;
@@ -112,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // EVENT LISTENERS AND HANDLER
     startButton.addEventListener("click", openQuiz);
-    nextBtn.addEventListener("click", nextQuestion);
+    nextButton.addEventListener("click", nextQuestion);
     document.getElementById("username-input").addEventListener("submit", function (e) {
         e.preventDefault();
         username = document.getElementById("username").value;
@@ -143,7 +154,8 @@ document.addEventListener("DOMContentLoaded", function() {
         questionContainer.innerHTML = "(" + questionsRoundIndex + ") " + currentQuestion.question;
 
         answerContainer.innerHTML = '';
-        nextBtn.style.display = "none";
+        nextButton.style.display = "none";
+        modalButton.style.display = "none";
         currentQuestion.answers.forEach(answer => {
            antwort = document.createElement("button")
            antwort.innerHTML = answer.text;
@@ -173,8 +185,9 @@ document.addEventListener("DOMContentLoaded", function() {
             antwort.disabled = true;  //will disable to click on another answer
         });
         }
-        nextBtn.style.display = "block"; // will display the next btn
-        nextBtn.innerText = "NEXT"; //set back, bc got changed in scoreCorrect
+        modalButton.style.display = "block";
+        nextButton.style.display = "block"; // will display the next btn
+        nextButton.innerText = "NEXT"; //set back, bc got changed in scoreCorrect
     }
 
     
@@ -217,7 +230,7 @@ function scoreCorrect() {
     answerContainer.innerHTML = '';
     startButton.classList.remove("hidden");
     startButton.innerHTML = "Start a new round";
-    nextBtn.innerHTML = (`💜 Keep up fighting, ${username} 💪 💜`);
+    nextButton.innerHTML = (`💜 Keep up fighting, ${username} 💪 💜`);
 }
 });
 

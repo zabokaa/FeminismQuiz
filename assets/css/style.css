@@ -49,6 +49,16 @@ button {
 .hidden {
     display: none;
 }
+
+/* MODAL */
+.modal {
+    display: none;
+}
+
+#modal-btn {
+    margin: 12px auto 0;
+    text-align: center;
+}
 /* QUIZ Section */
 
 #quiz-container {
