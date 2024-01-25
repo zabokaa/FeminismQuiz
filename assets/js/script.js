@@ -153,6 +153,8 @@ document.addEventListener("DOMContentLoaded", function() {
     questionsRoundIndex = 0;
     score = 0;
     console.log("quiz is starting"); 
+    randomize(questions);
+    randomQuestions = questions.slice(0, 2);  
     displayQuestion();
     startButton.classList.add("hidden");
     introContainer.classList.add("hidden");
@@ -236,10 +238,6 @@ function nextQuestion() {
         }
         return array;
     }
-    randomize(questions);
-    randomQuestions = questions.slice(0, 2);  
-    console.log(randomQuestions);
-
 
 /**
  * counting the correct answers of user and displaying it on last 
