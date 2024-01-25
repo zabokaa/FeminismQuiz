@@ -108,10 +108,16 @@ document.addEventListener("DOMContentLoaded", function() {
     let questionsRoundIndex = 0;
     let antwort;
     let score = 0;
+    let username = "";
 
 // EVENT LISTENERS AND HANDLER
     startButton.addEventListener("click", openQuiz);
     nextBtn.addEventListener("click", nextQuestion);
+    document.getElementById("username-input").addEventListener("submit", function (e) {
+        e.preventDefault();
+        username = document.getElementById("username").value;
+    }     
+    )
 // FUNCTIONS
 
  /**
@@ -211,7 +217,7 @@ function scoreCorrect() {
     answerContainer.innerHTML = '';
     startButton.classList.remove("hidden");
     startButton.innerHTML = "Start a new round";
-    nextBtn.innerText = "💜 Keep up fighting 💪 💜";
+    nextBtn.innerHTML = (`💜 Keep up fighting ${username} 💪 💜`);
 }
 });
 
