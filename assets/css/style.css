@@ -33,7 +33,12 @@ main {
 h1,
 h2 {
     font-family: 'Yatra One', system-ui;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+
+}
+
+h2 {
+    font-size: 100%;
 }
 
 .intro-box {
