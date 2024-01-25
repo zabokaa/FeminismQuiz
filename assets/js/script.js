@@ -167,7 +167,6 @@ document.addEventListener("DOMContentLoaded", function() {
         currentQuestion = randomQuestions[questionsRoundIndex]
         questionsRoundIndex++;
         questionContainer.innerHTML = "(" + questionsRoundIndex + ") " + currentQuestion.question;
-
         answerContainer.innerHTML = '';
         nextButton.style.display = "none";
         modalButton.style.display = "none";
@@ -219,7 +218,8 @@ function nextQuestion() {
           });
         displayQuestion();
     } else {
-        scoreCorrect();     
+        scoreCorrect();  
+        modalButton.style.display = "none";   
     }
     if (modal.style.display === "block") {
         modal.style.display = "none";
@@ -249,8 +249,7 @@ function scoreCorrect() {
     answerContainer.innerHTML = '';
     startButton.classList.remove("hidden");
     startButton.innerHTML = "Start a new round";
-    modalButton.innerHTML = (`Hola ${username}!<br> If you want to learn more click "Start an new game" above.`)
-    nextButton.innerHTML = "💜 Keep up fighting 💪 💜";
+    nextButton.innerHTML = (`💜 Keep up fighting, ${username} 💪 💜`);
 }
 });
 
