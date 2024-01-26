@@ -41,17 +41,23 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 ### Start Page
 
+  ![intro](./assets/img/intro.png)
+
 ### User Login and Start Quiz
 
-  ![username](./assets/img/username.png)
+  ![username](./assets/img/startQuiz.png)
 
 ### Quiz Section
 
   ![quizValidation](./assets/img/questionIncorrect.png)
 
+### Modal for backgroudn info about correct answer
+
+  ![modal](./assets/img/modal.png)
+
 ### End of Game Round --> Score and Play again
 
-  ![endQuiz](./assets/img/score.png)
+  ![endQuiz](./assets/img/scoreAgain.png)
 
 ## Design
 
