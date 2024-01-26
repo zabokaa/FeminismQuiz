@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function openQuiz() {
         questionsRoundIndex = 0;
         score = 0;
-        console.log("quiz is starting");
         randomize(questions);
         randomQuestions = questions.slice(0, 2);
         displayQuestion();
