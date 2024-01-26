@@ -59,6 +59,9 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
   ![endQuiz](./assets/img/scoreAgain.png)
 
+### Footer 
+  ![footer](./assets/img/footer.png)
+
 ## Design
 
 ### Colors
