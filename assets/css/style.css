@@ -179,9 +179,6 @@ footer p {
         font-size: 110%;
     }
 
-    .username-btn {
-        font-size: 100%;
-    }
     #quiz-container {
         background: var(--secondary-color);
         width: 95%;
