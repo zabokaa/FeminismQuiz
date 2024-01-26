@@ -45,6 +45,14 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 ## User Stories
 
+- As a user, I want interactive learning.
+- As a user, I want to see the correct and incorrect answers for each question.
+- As a user, I like to have theh possibility to get more background information about the correct answer.
+- As a user, I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
+- As a user, I want new questions randomly picked for a new quiz round.
+- As a user, I want to see my score at the end of a round.
+- As a user, I want to easily navigate the site.
+
 ## Design
 
 ### Colors
