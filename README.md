@@ -39,10 +39,10 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 ### Official Validators
 
-- [W3C HTML Validator](./assets/img/xx): No errors
-- [W3C CSS Validator](./assets/img/xx):  No errors
-- [Lighthouse Chrome DevTools](./assets/img/xx): Accessibility 100
-- [WAVE](./assets/img/xx): No errors for accessibility and color contrast
+- [W3C HTML Validator](./assets/img/htmlVal.png): No errors
+- [W3C CSS Validator](./assets/img/CSSvalidator.png):  No errors
+- [Lighthouse Chrome DevTools](./assets/img/lighthouseVal.png): Accessibility 100
+- [WAVE](./assets/img/WAVEval.png): No errors for accessibility and color contrast
 
 ### Bugs
 
