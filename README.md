@@ -27,6 +27,10 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 - To offer a stimulating quiz experience that entertains online users
 - Users visiting the site aim to engage in an online quiz to evaluate their general or specific knowledge about women's history in Germany
 
+## Key Features
+
+## User Stories
+
 ## Testing
 
 ### Manual
@@ -45,3 +49,12 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
   - When a user wants to restart the game the shuffle funcion was not called. I fixed the bug by moving `randomize(questions);` to the `openQuiz()` function.
   - 
+
+
+## Acknowledgements
+
+This project was based on full-stack course @ Code Institute. 
+
+Ideas for code snippets (commented in my code)
+- W3School
+- Web Dev Simplified
