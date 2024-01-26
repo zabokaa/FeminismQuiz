@@ -68,8 +68,8 @@ For indicating the correct and incorrect answer of each questions I use green an
 ### Manual
 
 - Navigation is working
-- If a user name has been entered it is stored for the next round
-- Next and Modal Buttons are only beeing displayed after user has selected an answer
+- If a username has been entered, it is stored for the next round
+- Next and Modal Buttons are only being displayed after the user has selected an answer
 - User can only select one answer
 - Questions are picked randomly for each new round
 
