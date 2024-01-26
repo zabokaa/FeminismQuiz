@@ -67,6 +67,12 @@ For indicating the correct and incorrect answer of each questions I use green an
 
 ### Manual
 
+- Navigation is working
+- If a user name has been entered it is stored for the next round
+- Next and Modal Buttons are only beeing displayed after user has selected an answer
+- User can only select one answer
+- Questions are picked randomly for each new round
+
 ### Official Validators
 
 - [W3C HTML Validator](./assets/img/htmlVal.png): No errors
