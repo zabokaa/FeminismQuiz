@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         questionsRoundIndex = 0;
         score = 0;
         randomize(questions);
-        randomQuestions = questions.slice(0, 2);
+        randomQuestions = questions.slice(0, 5);
         displayQuestion();
         startButton.classList.add("hidden");
         introContainer.classList.add("hidden");
