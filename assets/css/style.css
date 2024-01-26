@@ -66,6 +66,15 @@ button {
     margin-top: 12px;
 }
 
+#start-quiz-btn {
+    box-shadow: 3px 6px 3px var(--third-color);
+}
+
+#start-quiz-btn:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 .hidden {
     display: none;
 }
@@ -101,7 +110,6 @@ button {
 }
 
 .answer-button:disabled {
-    /* /WHY IS IT NOT WORKING ?? */
     cursor: no-drop;    
 }
 
