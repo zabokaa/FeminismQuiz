@@ -29,6 +29,20 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 ## Key Features
 
+- Start Page
+
+- User Login and Start Quiz
+
+  ![username](./assets/img/username.png)
+
+- Quiz Section
+
+  ![quizValidation](./assets/img/questionIncorrect.png)
+
+- End of Game Round --> Score and Play again
+
+  ![endQuiz](./assets/img/score.png)
+
 ## User Stories
 
 ## UX Design
