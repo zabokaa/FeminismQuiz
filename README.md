@@ -53,7 +53,7 @@ As primary and secondary colors, I chose purple and green (here with a more blui
 
   ![colorpalatte](./assets/img/ColorPalate.png)
 
-For indicating the correct and incorrect answer of each questions I use green and red because the colours are self-explanatory in this context. I chose a pastel colour in each case because it is easier to integrate into the colour palette of the page.
+For indicating the correct and incorrect answer of each questions I use green and red because the colors are self-explanatory in this context. I chose a pastel colour in each case because it is easier to integrate into the colour palette of the page.
 
 ## Testing
 
