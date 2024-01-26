@@ -1,8 +1,3 @@
-
-// FUNCTIONS 
-/**
-* waiting for DOM to be loaded
-*/
 document.addEventListener("DOMContentLoaded", function () {
     const quizContainer = document.getElementById("quiz-container");
     const questionContainer = document.getElementById("questions");
