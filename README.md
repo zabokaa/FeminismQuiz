@@ -70,6 +70,10 @@ For indicating the correct and incorrect answer of each questions I use green an
 
 - When a user wants to restart the game the shuffle funcion was not called. I fixed the bug by moving `randomize(questions);` to the `openQuiz()` function.
 
+- When user did not close the modal box it has been displayed (beiing open) on the next slide. I fixed it using following if-statment `if (modal.style.display === "block") {
+        modal.style.display = "none";
+    }`
+
 ## Technologies
 
 JavaScript | HTML | CSS
