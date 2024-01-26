@@ -200,12 +200,12 @@ document.addEventListener("DOMContentLoaded", function() {
              if (antwort.dataset.correct === "true") {
                     antwort.classList.add("correct");
                 }
-            antwort.disabled = true;  //will disable to click on another answer
+            antwort.disabled = true;  
         });
         }
         modalButton.style.display = "block";
-        nextButton.style.display = "block"; // will display the next btn
-        nextButton.innerText = "NEXT"; //set back, bc got changed in scoreCorrect
+        nextButton.style.display = "block"; 
+        nextButton.innerText = "NEXT"; 
     }
 
     
