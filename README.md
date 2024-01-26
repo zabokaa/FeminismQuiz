@@ -1,8 +1,8 @@
 # :purple_circle: *Feminism Quiz* :purple_circle:
 
-Feminism Quiz is an educational and informativ site with questions about the history and stepstones of feminist movements in Germany. The user can check their knowledge and can close gaps in their knowledge while having fun playing a game. 
+Feminism Quiz is an educational and informative site with questions about the history and milestones of feminist movements in Germany. Users can assess their knowledge and fill gaps in their understanding while enjoying a game.
 
-HERE SCREENSHOTS OF DEPLYED SITE FOR VARIOUS SCREEN SIZES
+HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 💜 The deployed page can be found [here](https://zabokaa.github.io/FeminismQuiz/) ✊
 
@@ -21,11 +21,8 @@ HERE SCREENSHOTS OF DEPLYED SITE FOR VARIOUS SCREEN SIZES
 - [Project Status](#project-status)
 - [Acknowledgements](#acknowledgements)
 
-
 ## Objective
 
-- hands-on learning JavaScript Basics
-- improving CSS skills
-- 
-
-
+- Hands-on learning JavaScript Basics by building an interactive front-end application
+- To offer a stimulating quiz experience that entertains online users
+- Users visiting the site aim to engage in an online quiz to evaluate their general or specific knowledge about women's hisoty in Germany
