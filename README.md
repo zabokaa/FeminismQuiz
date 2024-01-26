@@ -49,7 +49,7 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 ### Colors
 
-As a primary and secondary colors I picked purple and green, because they are two colors connected globally to femnist movements.
+As primary and secondary colors, I chose purple and green (here with a more bluish tone) because they are two colors globally connected to feminist movements.
 
   ![colorpalate](./assets/img/ColorPalate.png)
 
