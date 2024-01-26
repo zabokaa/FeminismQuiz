@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let randomQuestions = []; 
     let currentQuestion;
     let questionsRoundIndex = 0;
-    let antwort;
+    let answerButton;
     let score = 0;
     let username = "";
 
@@ -70,15 +70,15 @@ document.addEventListener("DOMContentLoaded", function() {
         nextButton.style.display = "none";
         modalButton.style.display = "none";
         currentQuestion.answers.forEach(answer => {
-           antwort = document.createElement("button")
-           antwort.innerHTML = answer.text;
-           antwort.classList.add("answer-button");
-           answerContainer.appendChild(antwort); 
+           answerButton = document.createElement("button")
+           answerButton.innerHTML = answer.text;
+           answerButton.classList.add("answer-button");
+           answerContainer.appendChild(answerButton); 
 // idea taken from Web Dev Simplified (see aknowledgement in ReadMe)
            if (answer.correct) {
-            antwort.dataset.correct = answer.correct
+            answerButton.dataset.correct = answer.correct
            }
-           antwort.addEventListener("click", userAnswer)
+           answerButton.addEventListener("click", userAnswer)
     });
     //  modal-text
         modalText.innerHTML = currentQuestion.explanation;
@@ -96,11 +96,11 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
             clickedBtn.classList.add("incorrect");
        
-            Array.from(answerContainer.children).forEach(antwort => {
-             if (antwort.dataset.correct === "true") {
-                    antwort.classList.add("correct");
+            Array.from(answerContainer.children).forEach(answerButton => {
+             if (answerButton.dataset.correct === "true") {
+                    answerButton.classList.add("correct");
                 }
-            antwort.disabled = true;  
+            answerButton.disabled = true;  
         });
         }
         modalButton.style.display = "block";
@@ -114,9 +114,9 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 function nextQuestion() {
     if (questionsRoundIndex < randomQuestions.length) {
-        Array.from(answerContainer.children).forEach(antwort => {
-            antwort.classList.remove("correct", "incorrect");
-            antwort.disabled = false;
+        Array.from(answerContainer.children).forEach(answerButton => {
+            answerButton.classList.remove("correct", "incorrect");
+            answerButton.disabled = false;
           });
         displayQuestion();
     } else {
