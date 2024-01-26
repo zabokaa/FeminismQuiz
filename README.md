@@ -51,7 +51,9 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 As primary and secondary colors, I chose purple and green (here with a more bluish tone) because they are two colors globally connected to feminist movements.
 
-  ![colorpalate](./assets/img/ColorPalate.png)
+  ![colorpalatte](./assets/img/ColorPalate.png)
+
+For indicating the correct and incorrect answer of each questions I use green and red because the colours are self-explanatory in this context. I chose a pastel colour in each case because it is easier to integrate into the colour palette of the page.
 
 ## Testing
 
