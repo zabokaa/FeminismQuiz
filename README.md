@@ -52,6 +52,7 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 - As a user, I want new questions randomly picked for a new quiz round.
 - As a user, I want to see my score at the end of a round.
 - As a user, I want to easily navigate the site.
+- As a user, I want to decide for myself if I want to enter a username or not.
 
 ## Design
 
