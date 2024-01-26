@@ -187,6 +187,9 @@ document.addEventListener("DOMContentLoaded", function() {
         modalText.innerHTML = currentQuestion.explanation;
 }
 
+/**
+ * checking if user's anwer is correct or incorrect
+ */
     function userAnswer(a) {
         const clickedBtn = a.target;
         const correct = clickedBtn.dataset.correct === "true";
