@@ -29,23 +29,29 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 ## Key Features
 
-- Start Page
+### Start Page
 
-- User Login and Start Quiz
+### User Login and Start Quiz
 
   ![username](./assets/img/username.png)
 
-- Quiz Section
+### Quiz Section
 
   ![quizValidation](./assets/img/questionIncorrect.png)
 
-- End of Game Round --> Score and Play again
+### End of Game Round --> Score and Play again
 
   ![endQuiz](./assets/img/score.png)
 
 ## User Stories
 
 ## UX Design
+
+### Colors
+
+As a primary and secondary colors I picked purple and green, because they are two colors connected globally to femnist movements.
+
+  ![colorpalate](./assets/img/ColorPalate.png)
 
 ## Testing
 
