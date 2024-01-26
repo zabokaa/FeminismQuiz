@@ -9,8 +9,8 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 ## Table of Contents
 
 - [Objective](#objective)
-- [Key Features](#key-features)
 - [User Stories](#user-stories)
+- [Key Features](#key-features)
 - [Design](#design)
 - [Testing](#testing)
   - [Manual](#manual)
@@ -27,6 +27,17 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 - To offer a stimulating quiz experience that entertains online users
 - Users visiting the site aim to engage in an online quiz to evaluate their general or specific knowledge about women's history in Germany
 
+## User Stories
+
+- As a user, I want interactive learning.
+- As a user, I want to see the correct and incorrect answers for each question.
+- As a user, I like to have theh possibility to get more background information about the correct answer.
+- As a user, I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
+- As a user, I want new questions randomly picked for a new quiz round.
+- As a user, I want to see my score at the end of a round.
+- As a user, I want to easily navigate the site.
+- As a user, I want to decide for myself if I want to enter a username or not.
+
 ## Key Features
 
 ### Start Page
@@ -42,17 +53,6 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 ### End of Game Round --> Score and Play again
 
   ![endQuiz](./assets/img/score.png)
-
-## User Stories
-
-- As a user, I want interactive learning.
-- As a user, I want to see the correct and incorrect answers for each question.
-- As a user, I like to have theh possibility to get more background information about the correct answer.
-- As a user, I expect a consistent and responsive design for easy use on various devices, prioritizing mobile devices first.
-- As a user, I want new questions randomly picked for a new quiz round.
-- As a user, I want to see my score at the end of a round.
-- As a user, I want to easily navigate the site.
-- As a user, I want to decide for myself if I want to enter a username or not.
 
 ## Design
 
