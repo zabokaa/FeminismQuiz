@@ -37,11 +37,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // FUNCTIONS
-
-    /**
-    * opening the quiz
+     /**
+    * starting the quiz
     */
     function openQuiz() {
+        username = document.getElementById("username").value;
+        if (username.length > 0) {
+            startQuiz();
+        } else {
+            alert("Please enter your username before starting the quiz 💪")
+        }
+    }
+
+    /**
+    * starting the quiz
+    */
+    function startQuiz() {
         questionsRoundIndex = 0;
         score = 0;
         randomize(questions);
