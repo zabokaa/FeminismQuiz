@@ -129,8 +129,8 @@ This project was based on full-stack course @ Code Institute.
 
 Ideas for code snippets (commented in my code)
 
-- [W3School](https://www.w3schools.com/howto/howto_css_modals.asp)
-- [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
+- [W3School](https://www.w3schools.com/howto/howto_css_modals.asp) [for modal code]
+- [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) [as quoted in script.js]
 
 The content of some questions are taken from:
 
