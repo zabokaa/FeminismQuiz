@@ -110,5 +110,11 @@ This project was based on full-stack course @ Code Institute.
 
 Ideas for code snippets (commented in my code)
 
-- W3School
-- Web Dev Simplified
+- [W3School](https://www.w3schools.com/howto/howto_css_modals.asp)
+- [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
+
+The content of some questions are taken from:
+
+- [GeoWissen](https://www.geo.de/wissen/quiz/quiz-was-wissen-sie-uber-die-frauenbewegung-30203104.html)
+- [Amnesty International](https://www.amnesty.de/sites/default/files/2019-03/Quiz-Frauenrechte-2019.pdf)
+[translated by me]
