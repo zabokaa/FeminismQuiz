@@ -23,6 +23,25 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 ## Objective
 
-- Hands-on learning JavaScript Basics by building an interactive front-end application
+- Hands-on learning JavaScript basics by building an interactive front-end application
 - To offer a stimulating quiz experience that entertains online users
-- Users visiting the site aim to engage in an online quiz to evaluate their general or specific knowledge about women's hisoty in Germany
+- Users visiting the site aim to engage in an online quiz to evaluate their general or specific knowledge about women's history in Germany
+
+## Testing
+
+### Manual
+
+
+  
+### Official Validators
+
+  - [W3C HTML Validator](./assets/img/xx): No errors 
+  - [W3C CSS Validator](./assets/img/xx):  No errors
+  - [Lighthouse Chrome DevTools](./assets/img/xx): Accessibility 100
+  - [WAVE](./assets/img/xx): No errors for accessibility and color contrast
+
+
+### Bugs
+
+  - When a user wants to restart the game the shuffle funcion was not called. I fixed the bug by moving `randomize(questions);` to the `openQuiz()` function.
+  - 
