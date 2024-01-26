@@ -11,7 +11,7 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 - [Objective](#objective)
 - [Key Features](#key-features)
 - [User Stories](#user-stories)
-- [UX Design](#ux-design)
+- [Design](#design)
 - [Testing](#testing)
   - [Manual](#manual)
   - [Official Validators](#official-validators)
@@ -45,7 +45,7 @@ HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
 
 ## User Stories
 
-## UX Design
+## Design
 
 ### Colors
 
