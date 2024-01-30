@@ -77,11 +77,14 @@ For indicating the correct and incorrect answer of each questions I use green an
 
 ### Manual
 
-- Navigation is working
-- If a username has been entered, it is stored for the next round
-- Next and Modal Buttons are only being displayed after the user has selected an answer
-- User can only select one answer
-- Questions are picked randomly for each new round
+- Navigation is working.
+- After entering a username, the user can press the "Start the Quiz" button.
+- The intro section will not be displayed while showing the quiz section.
+- If a username has been entered, it is stored for the next round.
+- "Next" and "Modal" buttons are only displayed after the user has selected an answer.
+- The user can only select one answer.
+- The "Modal" button ("More Info") can be closed manually, and if the user did not, it will close when displaying the next question.
+- Questions are picked randomly for each new round.
 
 ### Official Validators
 
