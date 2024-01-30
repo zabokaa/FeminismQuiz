@@ -73,6 +73,10 @@ As primary and secondary colors, I chose purple and green (here with a more blui
 
 For indicating the correct and incorrect answer of each questions I use green and red because the colors are self-explanatory in this context. I chose a pastel colour in each case because it is easier to integrate into the colour palette of the page.
 
+### Typography
+
+I did research about feminist typography and picked two fonts out of those suggestions. The font used for the headline is reminiscent of historical typefaces and therefore fits well for a quiz on the history of feminist achievements in Germany.
+
 ## Testing
 
 ### Manual
