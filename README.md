@@ -2,7 +2,7 @@
 
 Feminism Quiz is an educational and informative site with questions about the history and milestones of feminist movements in Germany. Users can assess their knowledge and fill gaps in their understanding while enjoying a game.
 
-HERE SCREENSHOTS OF DEPLOYED SITE FOR VARIOUS SCREEN SIZES
+ ![mockup](./assets/img/mockup.png)
 
 💜 The deployed page can be found [here](https://zabokaa.github.io/FeminismQuiz/) ✊
 
