@@ -43,25 +43,45 @@ Feminism Quiz is an educational and informative site with questions about the hi
 
   ![intro](./assets/img/intro.png)
 
+- The page has the title 'FeministQuiz,' and after the welcoming, there is a short description about the topic of the quiz.
+- Below, the user sees a box displaying the rules of the quiz.
+
 ### User Login and Start Quiz
 
   ![username](./assets/img/startQuiz.png)
+
+- After entering a username, the user can press the "Start the Quiz" button, and the quiz section will be displayed.
+- In case the user did not set a username, the following alert will be displayed: "Please enter your username before starting the quiz 💪" to inform the user about the required step.
+- At the end of the round, the user's score will be displayed with an encouraging quote using their username to make it more personal.
 
 ### Quiz Section
 
   ![quizValidation](./assets/img/questionIncorrect.png)
 
-### Modal for backgroudn info about correct answer
+- The question will be displayed with three answers to choose from.
+- Moving to one answer box, the color of that box will change, as well as the cursor.
+- After choosing one answer, the "More Info" as well as the "Next" button will pop up.
+
+### Modal for background info about correct answer
 
   ![modal](./assets/img/modal.png)
+
+- In case the user wants to get more background information regarding the correct answer, they can press the "More Info" button, and it will be shown in a modal box.
+- The user can choose for themselves if they want to spend time reading that or not.
+- It can be closed with the close button inside.
 
 ### End of Game Round --> Score and Play again
 
   ![endQuiz](./assets/img/scoreAgain.png)
 
+- The user's score will be displayed in the form of "x out of 5" correct answers, below which there will be a personalized message.
+- On top of that box, the user can find the 'Start a New Round' button.
+
 ### Footer
 
   ![footer](./assets/img/footer.png)
+
+- The footer contains a short impressum and my email address in case the user wants to contact me.
 
 ## Design
 
