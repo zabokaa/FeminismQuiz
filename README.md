@@ -61,6 +61,8 @@ Feminism Quiz is an educational and informative site with questions about the hi
 - The question will be displayed with three answers to choose from.
 - Moving to one answer box, the color of that box will change, as well as the cursor.
 - After choosing one answer, the "More Info" as well as the "Next" button will pop up.
+- There is no go home etc. button becuase I like the user to finish the quiz.
+- The user knows where they are in the quiz: The questions are numbered.
 
 ### Modal for background info about correct answer
 
